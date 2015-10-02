@@ -1,18 +1,9 @@
-﻿@model IEnumerable<Starwars.Models.StarshipList>
+﻿@model Starwars.Models.StarshipList
 
 @{
-    
-}
-@section featured {
-    <section class="featured">
-        <div class="content-wrapper">
-            <hgroup class="title">
-                <h1>@ViewBag.Message.</h1>
-            </hgroup>
-        </div>
-        <div>
-            @Html.Partial("~/Views/Shared/StarshipList.cshtml", Model)
-        </div>
-    </section>
+    ViewBag.Title = "Index";
 }
 
+<h2>Index</h2>
+
+@Html.Partial("~/Views/Shared/StarshipList.cshtml", Model)

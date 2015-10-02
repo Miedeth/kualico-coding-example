@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Starwars.Models.StarshipList>
+﻿@model Starwars.Models.StarshipList
 
 
 <table>
@@ -101,7 +101,10 @@
             @Html.DisplayFor(modelItem => item.Edited)
         </td>
         <td> 
-            <a href="@item.Url">View Details</a>
+            @{
+                string id = item.Url.Replace("http://swapi.co/api/starships/", string.Empty).Replace("/", string.Empty);
+                }
+            <a href="/home/starship/@id">View Details</a>
         </td>
     </tr>
 }

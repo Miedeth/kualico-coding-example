@@ -15,12 +15,14 @@ namespace Starwars.Controllers
 
             StarshipList starships = Starwars.Services.StarwarsApi.GetStarships(null);
 
-            return View(starships);
+            return View("Index", starships);
         }
 
-        public ActionResult Starship()
+        public ActionResult Starship(int id)
         {
-            return View();
+            Starship starship = Starwars.Services.StarwarsApi.GetStarship(id);
+
+            return View("Starship", starship);
         }
     }
 }
