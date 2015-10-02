@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Starwars.Models;
 
 namespace CustomerTracker.Controllers
 {
@@ -12,7 +13,9 @@ namespace CustomerTracker.Controllers
         {
             ViewBag.Message = "Crazy Achmed's starship emporium.";
 
-            return View();
+            StarshipList starships = Starwars.Services.StarwarsApi.GetStarships(null);
+
+            return View(starships);
         }
 
         public ActionResult Starship()

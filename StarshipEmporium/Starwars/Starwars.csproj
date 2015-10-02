@@ -124,6 +124,7 @@
     <Compile Include="Models\Starship.cs" />
     <Compile Include="Models\StarshipList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\StarwarsApi.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />

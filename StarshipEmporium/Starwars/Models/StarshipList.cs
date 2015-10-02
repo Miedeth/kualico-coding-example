@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using Newtonsoft.Json;
 
-namespace CustomerTracker.Models
+namespace Starwars.Models
 {
     public class StarshipList
     {
