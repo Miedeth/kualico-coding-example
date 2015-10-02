@@ -1,0 +1,109 @@
+﻿@model IEnumerable<CustomerTracker.Models.StarshipList>
+
+
+<table>
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Model
+        </th>
+        <th>
+            Manufacturer
+        </th>
+        <th>
+            CostInCredits
+        </th>
+        <th>
+            Length
+        </th>
+        <th>
+            MaxAtmospheringSpeed
+        </th>
+        <th>
+            Crew
+        </th>
+        <th>
+            Passengers
+        </th>
+        <th>
+            CargoCapacity
+        </th>
+        <th>
+            Consumables
+        </th>
+        <th>
+            HyperdriveRating
+        </th>
+        <th>
+            MGLT
+        </th>
+        <th>
+            StarshipClass
+        </th>
+        <th>
+            Created
+        </th>
+        <th>
+            Edited
+        </th>
+        <th>            
+        </th>
+    </tr>
+
+@foreach (CustomerTracker.Models.Starship item in Model.Starships)
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Model)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Manufacturer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CostInCredits)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Length)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaxAtmospheringSpeed)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Crew)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Passengers)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CargoCapacity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Consumables)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HyperdriveRating)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MGLT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StarshipClass)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Created)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Edited)
+        </td>
+        <td> 
+            <a href="@item.Url">View Details</a>
+        </td>
+    </tr>
+}
+
+</table>

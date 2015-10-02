@@ -1,0 +1,124 @@
+﻿@model CustomerTracker.Models.Starship
+
+@{
+    ViewBag.Title = "Starship";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Starship</h2>
+
+<fieldset>
+    <legend>Starship</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Model)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Model)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Manufacturer)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Manufacturer)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CostInCredits)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CostInCredits)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Length)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Length)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.MaxAtmospheringSpeed)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.MaxAtmospheringSpeed)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Crew)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Crew)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Passengers)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Passengers)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CargoCapacity)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CargoCapacity)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Consumables)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Consumables)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.HyperdriveRating)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.HyperdriveRating)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.MGLT)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.MGLT)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.StarshipClass)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StarshipClass)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Created)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Created)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Edited)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Edited)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Url)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
